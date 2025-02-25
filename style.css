@@ -19,13 +19,13 @@ html {
 }
 
 /* Configuracion del Body */
-body{
-    background:azure;
-    font-family: miFuente;
-    font-size: 100%;
+body {
+  background: azure;
+  font-family: miFuente;
+  font-size: 100%;
 }
 
-.formulario{
+.formulario {
   width: fit-content;
   height: fit-content;
   padding: 20px;
@@ -39,11 +39,11 @@ body{
   border-radius: 3px;
 }
 
-input{
+input {
   padding: 5px;
 }
 
-input:focus{
+input:focus {
   outline: 1px solid blue;
 }
 
@@ -53,9 +53,55 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-.btnEnviar{
+.btnEnviar {
   padding: 5px 10px;
   cursor: pointer;
   width: 100%;
 }
 
+/* Estilos Moviles */
+
+/* Celulares */
+@media (max-width: 600px) {
+  .formulario {
+    width: 70%;
+    height: fit-content;
+    margin: 30px auto;
+    padding: 10px;
+
+    /* border: 1px solid gray; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    /* border-radius: 3px; */
+  }
+
+  input {
+    padding: 8px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 2px;
+  }
+  
+  input:focus {
+    outline: 1px solid blue;
+  }
+
+  /* Oculta el spinner de input numerico */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .btnEnviar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+}

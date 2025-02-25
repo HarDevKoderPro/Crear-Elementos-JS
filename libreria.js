@@ -34,4 +34,11 @@ export class Libreria {
     document.querySelector(padre).appendChild(boton);
     return boton;
   }
+
+  // ----------------------------------------------------------------------------------
+  // Borrar Inputs
+  // ----------------------------------------------------------------------------------
+  static borrarInputs() {
+    document.querySelectorAll("input").forEach((input) => (input.value = ""));
+  }
 }

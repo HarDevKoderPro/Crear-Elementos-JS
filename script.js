@@ -44,4 +44,6 @@ btnEnviar.addEventListener('click', ()=>{
   Edad: ${inputEdad.value}
   Contraseña: ${inputPassword.value}
   `);
+
+  Libreria.borrarInputs();
 })
