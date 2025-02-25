@@ -1,5 +1,5 @@
 "use strict";
-import { Libreria } from "./libreria";
+import { Libreria } from "./libreria.js";
 // -------------------------------------------
 // CREACION DE ELEMENTOS
 // -------------------------------------------
