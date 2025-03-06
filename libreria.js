@@ -3,11 +3,11 @@ export class Libreria {
   //-------------------------------------------------------
   //1- CREAR CONTENEDOR (DIV)
   //-------------------------------------------------------
-  static crearContenedor(id, padre) {
+  static crearContenedor(params) {
     const contenedor = document.createElement("div");
-    contenedor.id = id;
-    contenedor.className = id;
-    document.querySelector(padre).appendChild(contenedor);
+    contenedor.id = params.id;
+    contenedor.className = params.id;
+    document.querySelector(params.padre).appendChild(contenedor);
     return contenedor;
   }
 
@@ -24,7 +24,7 @@ export class Libreria {
   }
 
   //-------------------------------------------------------
-  //3- Crear Botón
+  //3- CREAR BOTÓN
   //-------------------------------------------------------
   static crearBoton(id, texto, padre) {
     const boton = document.createElement("button");

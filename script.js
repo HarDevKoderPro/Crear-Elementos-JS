@@ -4,7 +4,8 @@ import { Libreria } from "./libreria.js";
 // CREACION DE ELEMENTOS
 // -------------------------------------------
 // Contenedor General
-Libreria.crearContenedor("formulario", "body");
+// Libreria.crearContenedor("formulario", "body");
+Libreria.crearContenedor({id:'formulario', padre:'body'});
 
 // Input para el nombre
 Libreria.crearInput('text', 'inputNombre', 'Nombre', '#formulario');
